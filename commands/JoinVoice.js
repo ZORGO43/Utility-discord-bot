@@ -10,11 +10,11 @@ module.exports = {
 
     async execute(interaction,client) {
         if (
-            interaction.member.roles.cache.has("1047180959310684280") ||
-            interaction.member.roles.cache.has("839178876298592306")
+            interaction.member.roles.cache.has("AUTH_ROLE_ID") ||
+            interaction.member.roles.cache.has("AUTH_ROLE_ID")
         ) {
             let channel = interaction.options.getChannel('channel');
-            let logch = await client.channels.fetch("1153706450313556081");
+            let logch = await client.channels.fetch("LOG_CHANNEL");
             const jvc = joinVoiceChannel({
                 channelId: channel.id, 
                 guildId: interaction.guildId,

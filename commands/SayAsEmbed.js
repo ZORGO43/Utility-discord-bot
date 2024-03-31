@@ -17,11 +17,11 @@ module.exports = {
 
     async execute(interaction, client) {
         if (
-            interaction.member.roles.cache.has("1047180959310684280") ||
-            interaction.member.roles.cache.has("839178876298592306")
+            interaction.member.roles.cache.has("AUTH_ROLE_ID") ||
+            interaction.member.roles.cache.has("AUTH_ROLE_ID")
         ) {
             let channel = interaction.options.getChannel('channel');
-            let logch = await client.channels.fetch("1153706450313556081");
+            let logch = await client.channels.fetch("LOG_CHANNEL_ID");
             const userName = interaction.user.username;
            // let message = interaction.options.getString('message');
             let calle = interaction.options.getString('mention');
@@ -34,8 +34,8 @@ module.exports = {
                 .setTimestamp(Date.now())
                 .setTitle(title)
                 .setDescription(desc)
-                .setThumbnail("https://cdn.discordapp.com/attachments/848543781899993088/994618531268276295/20220615_071901.png")
-                .setFooter({ text: 'Crystal Wyvern', iconURL: 'https://cdn.discordapp.com/attachments/848543781899993088/994618531268276295/20220615_071901.png' });
+                .setThumbnail("https://cdn.discordapp.com/attachments")
+                .setFooter({ text: 'Crystal Wyvern', iconURL: 'https://cdn.discordapp.com/attachments/' });
 
             if (calle === 'Yes' ){
                 await channel.send({

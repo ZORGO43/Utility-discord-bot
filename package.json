@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@discordjs/voice": "^0.16.1",
+    "@iamtraction/google-translate": "^2.0.1",
+    "@napi-rs/canvas": "^0.1.51",
+    "axios": "^1.6.8",
+    "canvas": "^2.11.2",
+    "canvas-constructor": "^7.0.1",
+    "cpu-stat": "^2.0.1",
+    "discord-gamecord": "^4.4.1",
+    "discord.js": "^14.14.1",
+    "fs": "^0.0.1-security",
+    "moment": "^2.30.1",
+    "mongoose": "^6.0.12",
+    "napi-rs": "^0.3.10",
+    "os": "^0.1.2",
+    "path": "^0.12.7"
+  }
+}
